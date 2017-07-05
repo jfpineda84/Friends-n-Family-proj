@@ -1,4 +1,4 @@
-<!-- <div id="form"> -->
+
 <center><div class="long-shadow">New Goal</div><center>
 <link async href="http://fonts.googleapis.com/css?family=Fredoka%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
 <style>
@@ -19,7 +19,7 @@ font-size: 96px;
 }
 </style>
 
-
+<div id="form">
 <%= form_for @goal, html: { multipart: true } do |form| %>
 
 <%= form_with(model: goal, local: true) do |form| %>
@@ -68,4 +68,4 @@ font-size: 96px;
 
 <% end %>
 <% end %>
-<!-- </div> -->
+</div>
