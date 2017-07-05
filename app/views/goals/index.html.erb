@@ -13,28 +13,30 @@
 
 
   <tr>
-      <th>Name</th>
-      <th>Length</th>
-      <th>Description</th>
-      <th>User</th>
+      <!-- <th>Name</th> -->
+      <!-- <th>Length</th> -->
+      <!-- <th>Description</th> -->
+      <!-- <th>User</th> -->
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-
     <% @goals.each do |goal| %>
       <tr>
-        <td><%= goal.name %></td>
-        <td><%= goal.length %></td>
-        <td><%= goal.description %></td>
+        <td><h3><%= goal.name %></td></h3>
+        <!-- <td><%= goal.length %></td> -->
         <td><%= link_to image_tag(goal.image.url(:med)), goal.image.url %></td>
-        <td><%= link_to 'Show', goal %></td>
-        <td><%= link_to 'Edit', edit_goal_path(goal) %></td>
+        <td><%= goal.description %></td>
+
+        <!-- <td><%= link_to 'Show', goal %></td> -->
+        <!-- <td><%= link_to 'Edit', edit_goal_path(goal) %></td> -->
         <td><%= link_to 'Destroy', goal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+
     <style>
+
     .long-shadow {
   display: inline-block;
   -webkit-box-sizing: content-box;
@@ -51,7 +53,6 @@
   font-size: 96px;
 }
 
-
     </style>
   </tbody>
 </table>
@@ -59,6 +60,6 @@
 <br>
 
 
-<%= link_to 'MileStone', new_milestone_url %> |
+<!-- <%= link_to 'MileStone', new_milestone_url %> | -->
 <br>
 <%= link_to 'New Goal', new_goal_path %>

@@ -14,7 +14,7 @@ body {
 #form{
     /*background-image: linear-gradient(to top, rgba(205, 156, 242, 0.40) 0%, rgba(246, 255, 255, 0.71) 100%);*/
     /*box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);*/
-    text-align: center;       /*this is needed*/
+    /*text-align: center;       /*this is needed*/*/
     border-radius: 5px;
     margin: 3em auto;
     background: rgba(255, 255, 255, 0.95); /*this is needed*/
@@ -84,7 +84,44 @@ body {
 /*goal lines*/
 img.current_goal {
     width:150px;
-    height: auto;}
+    height: auto;
+    display:inline-block
+  }
 img {
     width:300px;
-    height: auto;}
+    height: auto;
+    display:inline-block
+  }
+
+
+
+
+#imagetiles a {
+      font-size: 16px;
+      display: inline-block;
+      margin-bottom: 8px;
+      width: calc(50% - 4px);
+      margin-right: 8px;
+    }
+
+#imagetiles a:nth-of-type(2n) {
+      margin-right: 0;
+    }
+
+@media screen and (min-width: 50em) {
+
+#imagetiles a {
+        width: calc(25% - 6px);
+      }
+
+#imagetiles a:nth-of-type(2n) {
+        margin-right: 8px;
+      }
+
+#imagetiles a:nth-of-type(4n) {
+        margin-right: 0;
+      }
+    }
+
+
+/*.img-rounded*/
