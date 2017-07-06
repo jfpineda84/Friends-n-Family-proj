@@ -1,48 +1,96 @@
+<<<<<<< Updated upstream
 <%= form_for @goal, html: { multipart: true } do |form| %>
+=======
 
-<%= form_with(model: goal, local: true) do |form| %>
-  <% if goal.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(goal.errors.count, "error") %> prohibited this goal from being saved:</h2>
+<center><div class="long-shadow">New Goal</div><center>
+<link async href="http://fonts.googleapis.com/css?family=Fredoka%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+<style>
+.long-shadow {
+display: inline-block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+padding: 25px;
+border: none;
+font: normal 60px/1 "Fredoka One", Helvetica, sans-serif;
+color: rgba(255,255,255,1);
+text-align: center;
+-o-text-overflow: clip;
+text-overflow: clip;
+text-shadow: 3px 3px 0 rgba(34,38,40,0.91) , 3px 3px 0 rgba(34,38,40,0.91) , 3px 3px 0 rgba(34,38,40,0.91) , 4px 4px 0 rgba(42,44,45,0.91) , 6px 6px 0 rgba(42,44,45,0.91) , 7px 7px 0 rgba(42,44,45,0.91) , 8px 8px 0 rgba(42,44,45,0.91) , 9px 9px 0 rgba(42,44,45,0.91) , 10px 10px 0 rgba(42,44,45,0.91) , 11px 11px 0 rgba(42,44,45,0.91) , 12px 12px 0 rgba(42,44,45,0.91) , 13px 13px 0 rgba(42,44,45,0.91) , 14px 14px 0 rgba(42,44,45,0.91) , 15px 15px 0 rgba(42,44,45,0.91) , 16px 16px 0 rgba(42,44,45,0.91) , 17px 17px 0 rgba(42,44,45,0.91) ;
+font-size: 96px;
+}
+</style>
+<div class="container">
+  <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <%= form_for @goal, html: { multipart: true } do |form| %>
 
-      <ul>
-      <% goal.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+        <%= form_with(model: goal, local: true) do |form| %>
+          <% if goal.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(goal.errors.count, "error") %> prohibited this goal from being saved:</h2>
+>>>>>>> Stashed changes
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :goal_name %>
-  </div>
+              <ul>
+              <% goal.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+              </ul>
+            </div>
+          <% end %>
 
-  <div class="field">
-      <span class= "hide"><%= form.label :user_id %></span>
-      <%= form.hidden_field :user_id, id: :goal_user_id, value: current_user.id%>
-  </div>
+          <div class="form-group">
+            <%= form.label :name %>
+            <%= form.text_field :name, id: :goal_name, class:"form-control"  %>
+          </div>
 
+          <div class="form-group">
+              <span class= "hide"><%= form.label :user_id %></span>
+              <%= form.hidden_field :user_id, id: :goal_user_id, value: current_user.id%>
+          </div>
+
+          <!-- <div class="field">
+            <%= form.label :length %>
+            <%= form.number_field :length, id: :goal_length %>
+          </div> -->
+
+<<<<<<< Updated upstream
   <div class="field">
     <%= form.label :length %>
     <%= form.number_field :length, id: :goal_length %>
   </div>
+=======
+          <div class="form-group">
+            <%= form.label :description %>
+            <%= form.text_area :description, id: :goal_description, class:"form-control"  %>
+          </div>
+>>>>>>> Stashed changes
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :goal_description %>
-  </div>
 
+            <!-- used for uploading images -->
+            <div class="form-group">
+                <%= form.label :image %>
+                <%= form.file_field :image, id: :goal_image, class:"form-control" %>
+            </div>
 
-    <!-- used for uploading images -->
-    <div class="field">
-        <%= form.label :image %>
-        <%= form.file_field :image, id: :goal_image %>
-    </div>
+            <div class="actions">
+              <%= form.submit %>
+            </div>
 
+<<<<<<< Updated upstream
     <div class="actions">
       <%= form.submit %>
     </div>
 
 <% end %>
 <% end %>
+=======
+        <% end %>
+        <% end %>
+        <!-- </div> -->
+      </div>
+  </div>
+</div>
+<!-- <div id="form"> -->
+>>>>>>> Stashed changes
