@@ -1,65 +1,96 @@
+<link async href="http://fonts.googleapis.com/css?family=Fredoka%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+
+<style>
+
+.wrap-main {
+display: flex;
+}
+
+.long-shadow {
+display: inline-block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+padding: 25px;
+border: none;
+font: normal 60px/1 "Fredoka One", Helvetica, sans-serif;
+color: rgba(255,255,255,1);
+text-align: center;
+-o-text-overflow: clip;
+text-overflow: clip;
+text-shadow: 3px 3px 0 rgba(34,38,40,0.91) , 3px 3px 0 rgba(34,38,40,0.91) , 3px 3px 0 rgba(34,38,40,0.91) , 4px 4px 0 rgba(42,44,45,0.91) , 6px 6px 0 rgba(42,44,45,0.91) , 7px 7px 0 rgba(42,44,45,0.91) , 8px 8px 0 rgba(42,44,45,0.91) , 9px 9px 0 rgba(42,44,45,0.91) , 10px 10px 0 rgba(42,44,45,0.91) , 11px 11px 0 rgba(42,44,45,0.91) , 12px 12px 0 rgba(42,44,45,0.91) , 13px 13px 0 rgba(42,44,45,0.91) , 14px 14px 0 rgba(42,44,45,0.91) , 15px 15px 0 rgba(42,44,45,0.91) , 16px 16px 0 rgba(42,44,45,0.91) , 17px 17px 0 rgba(42,44,45,0.91) ;
+font-size: 96px;
+}
+
+.table-striped {}
+.img-thumbnail{}
+.text-center{
+  background-color: white
+}
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+ul {
+list-style-type: none;
+display: flex;
+}
+.wrap-main {
+  flex-wrap: wrap;
+}
+.link {
+  background-color: white;
+  width: 9%;
+  padding: 6px;
+  border-radius: 25px;
+}
+.link2 {
+  background-color: white;
+  width: 9%;
+  padding: 6px;
+  border-radius: 25px;
+}
+</style>
 
 <center><h1>""</h1><center>
 <p id="notice"><%= notice %></p>
 
 <!-- <center><h1>Goals</h1><center> -->
 
-<table>
-  <thead>
+<!-- <ul> -->
+
     <!-- title name -->
     <center><div class="long-shadow">Hall of Fame</div><center>
-<link async href="http://fonts.googleapis.com/css?family=Fredoka%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
 <!-- title name -->
 
 
-  <tr>
+  <li>
       <!-- <th>Name</th> -->
       <!-- <th>Length</th> -->
       <!-- <th>Description</th> -->
       <!-- <th>User</th> -->
       <th colspan="3"></th>
-    </tr>
-  </thead>
+    </li>
 
-  <tbody>
-    <% @goals.each do |goal| %>
-      <tr>
-        <td><h3><%= goal.name %></td></h3>
-        <!-- <td><%= goal.length %></td> -->
-        <td><%= link_to image_tag(goal.image.url(:med)), goal.image.url %></td>
-        <td><%= goal.description %></td>
-
-        <!-- <td><%= link_to 'Show', goal %></td> -->
-        <!-- <td><%= link_to 'Edit', edit_goal_path(goal) %></td> -->
-        <td><%= link_to 'Destroy', goal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-
-    <style>
-
-    .long-shadow {
-  display: inline-block;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  padding: 25px;
-  border: none;
-  font: normal 60px/1 "Fredoka One", Helvetica, sans-serif;
-  color: rgba(255,255,255,1);
-  text-align: center;
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  text-shadow: 3px 3px 0 rgba(34,38,40,0.91) , 3px 3px 0 rgba(34,38,40,0.91) , 3px 3px 0 rgba(34,38,40,0.91) , 4px 4px 0 rgba(42,44,45,0.91) , 6px 6px 0 rgba(42,44,45,0.91) , 7px 7px 0 rgba(42,44,45,0.91) , 8px 8px 0 rgba(42,44,45,0.91) , 9px 9px 0 rgba(42,44,45,0.91) , 10px 10px 0 rgba(42,44,45,0.91) , 11px 11px 0 rgba(42,44,45,0.91) , 12px 12px 0 rgba(42,44,45,0.91) , 13px 13px 0 rgba(42,44,45,0.91) , 14px 14px 0 rgba(42,44,45,0.91) , 15px 15px 0 rgba(42,44,45,0.91) , 16px 16px 0 rgba(42,44,45,0.91) , 17px 17px 0 rgba(42,44,45,0.91) ;
-  font-size: 96px;
-}
-
-    </style>
-  </tbody>
-</table>
+    <ul class="wrap-main">
+      <!-- <div clas="wrap-main"> -->
+      <% @goals.each do |goal| %>
+      <li style="flex:1;max-width: 250px;margin: 10px;">
+        <h3 class="text-center"><%= goal.name %></h3>
+        <p class="link2"><%= goal.length %></p>  
+        <%= link_to image_tag(goal.image.url(:med)), goal.image.url %>
+        <%= goal.description %>
+        <p class="link2"><%= link_to 'Show', goal %></p>
+        <p class="link2"><%= link_to 'Edit', edit_goal_path(goal) %></p>
+      </li>
+      <% end %>
+    <!-- </div> -->
+</ul>
 
 <br>
 
 
 <!-- <%= link_to 'MileStone', new_milestone_url %> | -->
 <br>
-<%= link_to 'New Goal', new_goal_path %>
+<p class="link"><%= link_to 'New Goal', new_goal_path %></p>
