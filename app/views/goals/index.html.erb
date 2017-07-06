@@ -25,19 +25,23 @@ font-size: 96px;
 .table-striped {}
 .img-thumbnail{}
 .text-center{
-  background-color: white
+  background-color: white;
+  text-align: center;
 }
 .img-responsive{
   max-width: 100%;
   height: auto;
-  display: block;
+
 }
+
 ul {
 list-style-type: none;
 display: flex;
 }
 .wrap-main {
   flex-wrap: wrap;
+  /*display: flex;*/
+  justify-content: space-between;
 }
 .link {
   background-color: white;
@@ -51,6 +55,15 @@ display: flex;
   padding: 6px;
   border-radius: 25px;
 }
+
+.link2.hoover{
+
+}
+
+.img-rounded {
+  border-radius: 15%;
+}
+
 </style>
 
 <center><h1>""</h1><center>
@@ -77,12 +90,18 @@ display: flex;
       <!-- <div clas="wrap-main"> -->
       <% @goals.each do |goal| %>
       <li style="flex:1;max-width: 250px;margin: 10px;">
-        <h3 class="text-center"><%= goal.name %></h3>
-        <p class="link2"><%= goal.length %></p>  
-        <%= link_to image_tag(goal.image.url(:med)), goal.image.url %>
-        <%= goal.description %>
-        <p class="link2"><%= link_to 'Show', goal %></p>
-        <p class="link2"><%= link_to 'Edit', edit_goal_path(goal) %></p>
+        <div class="card" style="width: 20rem;">
+          <%= link_to image_tag(goal.image.url(:med),class:"img-rounded"), goal.image.url %>
+          <div class="card-block">
+            <h4 class="card-title"><%= goal.description %></h4>
+            <p class=""><%= link_to 'Edit', edit_goal_path(goal), class: 'btn btn-primary btn-md' %></p>
+          </div>
+        </div>
+        <!-- <center><h3 class="text-center"><%= goal.name %></h3></center> -->
+        <!-- <p class="link2"><%= goal.length %></p>   -->
+        <% link_to image_tag(goal.image.url(:med),class:"img-rounded"), goal.image.url %>
+        <% goal.description %>
+        <!-- <p class="link2"><%= link_to 'Show', goal %></p> -->
       </li>
       <% end %>
     <!-- </div> -->
