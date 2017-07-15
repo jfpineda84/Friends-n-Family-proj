@@ -8,20 +8,20 @@
 * Timelines - deadlines & milestones
 * Creation of scenarios / personas
 * App feature creation
- * App elaboration
- * Front-end work
- * Back-end work
- * Presentation
- * Resources & research 
+  * App elaboration
+  * Front-end work
+  * Back-end work
+  * Presentation
+  * Resources & research 
 
 #### Technical
 > Used a basic rails scaffolding implementation for the creation this app. Created a user registration - sign-in and image uploader add ins.
 
 ## Synopsis
 
-_Just did It!_ Midterm Project was our first Developer Group project during our Wyncode training. 
+**_Just did It!_** Midterm Project was our first Developer Group project during our Wyncode training. 
 
-Its purpose consisted in selecting one of three options ranging from easy to difficulty. We chose med-high project implementing Imgur app clone with log-in capabilities, called _Just did It!_ which allows the users to post their most recent accomplishments or _Goals_ in their _Hall of Fame_ `<show>` page.
+Its purpose consisted in selecting one of three options ranging from easy to difficulty. We chose med-high project implementing Imgur app clone with log-in capabilities, called _Just did It!_ which allows the users to `<create>` their most recent accomplishments or _Goals_ in their _Hall of Fame_ `<show>` page.
 
 To learn about our Trello project management board, please [click here](https://wyncode.co/coding-bootcamp-2/). 
 
@@ -41,8 +41,8 @@ To learn about our Trello project management board, please [click here](https://
 **Rails Version 5.1.2**
 **Bootstrap**
 
-#### Contact info 
+#### For more info 
 
-**Stefani Paulinelli** - GitHub _**sp91br**_ Back-end / Front - end
-**Juan Fernando** - _**jfpineda84@gmail.com**_ Back-end / Front - end
-**Arthur Knight** - GitHub _**BlakeKnight**_ Front - end
+* **Stefani Paulinelli** - GitHub _**sp91br**_ Back-end / Front - end
+* **Juan Fernando** - _**jfpineda84@gmail.com**_ Back-end / Front - end
+* **Arthur Knight** - GitHub _**BlakeKnight**_ Front - end
