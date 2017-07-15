@@ -44,5 +44,5 @@ To learn about our Trello project management board, please [click here](https://
 #### For more info 
 
 * **Stefani Paulinelli** - GitHub _**sp91br**_ Back-end / Front - end
-* **Juan Fernando** - _**jfpineda84@gmail.com**_ Back-end / Front - end
+* **Juan Fernando** - GitHub _**jfpineda84**_ Back-end / Front - end
 * **Arthur Knight** - GitHub _**BlakeKnight**_ Front - end
