@@ -8,40 +8,41 @@
 * Timelines - deadlines & milestones
 * Creation of scenarios / personas
 * App feature creation
-* App elaboration
-  * Front-end work
-  * Back-end work
-  * Presentation
-  * Resources & research 
+ * App elaboration
+ * Front-end work
+ * Back-end work
+ * Presentation
+ * Resources & research 
 
 #### Technical
 > Used a basic rails scaffolding implementation for the creation this app. Created a user registration - sign-in and image uploader add ins.
 
+## Synopsis
+
+_Just did It!_ Midterm Project was our first Developer Group project during our Wyncode training. 
+
+Its purpose consisted in selecting one of three options ranging from easy to difficulty. We chose med-high project implementing Imgur app clone with log-in capabilities, called _Just did It!_ which allows the users to post their most recent accomplishments or _Goals_ in their _Hall of Fame_ `<show>` page.
+
+To learn about our Trello project management board, please [click here](https://wyncode.co/coding-bootcamp-2/). 
 
 
-# README
+### Resources
 
-## Name - GoalBlast App
+* [Wyncode resources](https://wyncode.co/coding-bootcamp-2/)
+* Wyncode TA’s & colleagues
+* [Trello](https://wyncode.co/coding-bootcamp-2/)
+* [Device](https://github.com/plataformatec/devise)
+* [PaperClip](https://github.com/thoughtbot/paperclip)
+* [Bootstrap](http://getbootstrap.com/)
 
-### Purpose - Accountability app for people trying to achieve their exercise goals
+### Technology Used
 
-#### User side
-1. To share your exercise or fitness activity Goals success
-2. Helps the user with accountability network
-3. Can place routines, tips and ideas on how to be successful
+**Ruby Version 2.4.1p111**
+**Rails Version 5.1.2**
+**Bootstrap**
 
-#### Viewer side
-1. Can cheer on the user on their success
-2. Can monitor / support the user success
-3. Can place comments to aid in the user's success
-4. Can purchase the users training plan
+#### Contact info 
 
-##### Ruby version - ruby 2.4.1p111 (2017-03-22 revision 58053)
-* System dependencies
-* Configuration
-##### Database creation - July 1 2017
-* Database initialization - 
-* How to run the test suite - 
-* Services (job queues, cache servers, search engines, etc.)
-##### Deployment instructions - Fork and clone the repository to work on the file
-
+**Stefani Paulinelli** - GitHub _**sp91br**_ Back-end / Front - end
+**Juan Fernando** - _**jfpineda84@gmail.com**_ Back-end / Front - end
+**Arthur Knight** - GitHub _**BlakeKnight**_ Front - end
