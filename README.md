@@ -1,3 +1,24 @@
+# _Just did It!_ Midterm Project - Week 05
+## Description
+
+#### Agile Project Implementation
+> Utilized Agile techniques for the development of the project idea, project elaboration and execution.
+
+* Target Market & Problem development
+* Timelines - deadlines & milestones
+* Creation of scenarios / personas
+* App feature creation
+* App elaboration
+  * Front-end work
+  * Back-end work
+  * Presentation
+  * Resources & research 
+
+#### Technical
+> Used a basic rails scaffolding implementation for the creation this app. Created a user registration - sign-in and image uploader add ins.
+
+
+
 # README
 
 ## Name - GoalBlast App
